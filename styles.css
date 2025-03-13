@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9; /* Fondo verde claro */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    color: #000; /* Letras negras */
+    padding: 10px 20px;
+    border-bottom: 2px solid #e74c3c; /* Línea roja en la parte inferior */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.logo {
+    width: 50px; /* Tamaño del logo */
+    height: auto;
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000; /* Letras negras */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.info-ribbon {
+    background: rgba(255, 255, 255, 0.8); /* Fondo transparente */
+    color: #000; /* Letras negras */
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: 2px solid #e74c3c; /* Marco rojo */
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.info-ribbon p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: moveText 15s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero {
+    background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    color: #000; /* Letras negras */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #e74c3c; /* Rojo */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #c0392b; /* Rojo oscuro al pasar el mouse */
+}
+
+footer {
+    background: #2c3e50; /* Azul oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+}
